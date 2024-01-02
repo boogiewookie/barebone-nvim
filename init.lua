@@ -1,5 +1,5 @@
 -- Error theme:
-vim.cmd('colorscheme habamax')
+vim.cmd('set background=light')
 --0=========================================================================0
 -- █▀ █▀▀ ▀█▀ ▀█▀ █ █▄░█ █▀▀ █▀
 -- ▄█ ██▄ ░█░ ░█░ █ █░▀█ █▄█ ▄█
@@ -125,9 +125,9 @@ vim.opt.rtp:prepend(lazypath)                                -- Ends here, this 
 --0=========================================================================0
 require("lazy").setup({
     {
-        'leet0rz/modified-moonlight.nvim', -- this is the theme
+        'yasukotelin/notelight', -- this is the theme
         config = function()
-            vim.cmd('colorscheme moonlight') -- this applies the theme
+            vim.cmd('colorscheme notelight') -- this applies the theme
         end
     },
     {
