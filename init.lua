@@ -230,7 +230,7 @@ require("lazy").setup({
         require('lualine').setup({
             options = {
                 icons_enabled = true,
-                -- theme = 'dracula',
+                theme = 'dracula',
             },
             -- this part shows full path, helps navigate in Oil.
             sections = {
