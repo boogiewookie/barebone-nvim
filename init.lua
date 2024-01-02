@@ -250,6 +250,10 @@ require("lazy").setup({
             require('mason').setup()
         end
     },
+    {
+        "williamboman/mason-lspconfig.nvim",
+        lazy = false
+    },
     --0=============================================================================================0
     -- █░░ █▀ █▀█
     -- █▄▄ ▄█ █▀▀
@@ -288,7 +292,12 @@ require("lazy").setup({
                         telemetry = { enable = false },
                     },
                 },
-            })
+            });
+            lspconfig.beancount.setup= {
+                init_options = {
+                    journal_file = "/home/dunc/beancount/ledger/journal.bean",
+                };
+            };
             -- new server goes here:
             -- lspconfig.SERVER.setup({
             --    on_attach = custom_attach,
